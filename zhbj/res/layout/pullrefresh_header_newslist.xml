@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#2000"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <ProgressBar
+            android:id="@+id/pb_progress"
+            style="@android:style/Widget.ProgressBar.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateDrawable="@drawable/custom_progress"
+            android:layout_gravity="center"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/iv_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/common_listview_headview_red_arrow"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tv_pullrefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下拉刷新"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_regresh_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="最后刷新时间:2016-09-08 00:53"
+            android:textColor="#a000"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

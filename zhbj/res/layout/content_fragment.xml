@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.zhbj.zhbj.view.NoScrollViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_tab_bg"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/btn_home"
+            style="@style/content_buttom_tab"
+            android:drawableTop="@drawable/btn_tab_home_selector"
+            android:text="@string/hometab" />
+
+        <RadioButton
+            android:id="@+id/btn_news"
+            style="@style/content_buttom_tab"
+            android:drawableTop="@drawable/btn_tab_news_selector"
+            android:text="@string/newstab" />
+
+        <RadioButton
+            android:id="@+id/btn_smart"
+            style="@style/content_buttom_tab"
+            android:drawableTop="@drawable/btn_tab_smart_selector"
+            android:text="@string/smarttab" />
+
+        <RadioButton
+            android:id="@+id/btn_gov"
+            style="@style/content_buttom_tab"
+            android:drawableTop="@drawable/btn_tab_gov_selector"
+            android:text="@string/govtab" />
+
+        <RadioButton
+            android:id="@+id/btn_setting"
+            style="@style/content_buttom_tab"
+            android:drawableTop="@drawable/btn_tab_setting_selector"
+            android:text="@string/settingtab" />
+    </RadioGroup>
+
+</LinearLayout>
